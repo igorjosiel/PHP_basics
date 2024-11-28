@@ -20,14 +20,18 @@
   </nav>
 
   <div class="m-5 p-5">
-    <form action="search.php" method="post" class="flex gap-4 justify-center">
+    <form action="search.php" method="get" class="flex flex-wrap gap-4 justify-center">
       <input
         id="search"
         name="search"
         type="text"
         placeholder="Busque seus livros..."
-        class="rounded text-sm py-1 outline outline-cyan-400 pl-3 w-2/5">
-      <button type="submit" class="bg-sky-600 py-1 px-3 rounded text-gray-50 font-bold">Buscar</button>
+        class="rounded text-sm py-1 outline outline-cyan-400 pl-3 w-full sm:w-2/3 md:w-1/2 focus:outline-sky-500 focus:ring focus:ring-cyan-200">
+      <button
+        type="submit"
+        class="bg-sky-600 py-1 px-3 rounded text-gray-50 font-bold hover:bg-sky-700 active:bg-sky-800 transition duration-300">
+        Buscar
+      </button>
     </form>
   </div>
 </body>
